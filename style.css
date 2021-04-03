@@ -1,0 +1,93 @@
+body {
+    background-color: #1f1f1f;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+button {
+    padding: 7px;
+    height: 30px;
+    width: 130px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 2%;
+    list-style:none;
+
+}
+
+a {
+    color: #ffd100;
+}
+
+em {
+    text-decoration: none;
+    font-style: normal;
+    color: #ffd100;
+}
+
+.main {
+    position: relative;
+    width: 80%;
+}
+
+.unfinished-step {
+    position: relative;
+    border: 1px solid #555;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-right: 10%;
+}
+
+.unfinished-step button {
+    color: #ddd;
+    background-color: #4c6e4c;
+    border: 1px solid #72a172;
+}
+
+.current-step {
+    position: relative;
+    border: 1px solid #ddd;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-right: 10%;
+}
+
+.current-step button {
+    color: #ddd;
+    font-weight: bold;
+    background-color: #189618;
+    border: 1px solid #21d121;
+}
+
+.finished-step {
+    position: relative;
+    border: 1px solid #333;
+    color: #888;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    padding-right: 10%;
+    background-image: url("tick.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+.finished-step button {
+    color: #999;
+    background-color: #333;
+    border: 1px solid #888;
+}
