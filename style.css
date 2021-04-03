@@ -22,8 +22,21 @@ ul {
     margin: 0;
     padding: 0;
     padding-left: 2%;
-    list-style:none;
+    list-style: none;
+}
 
+.quest-small {
+    height: 16px;
+    width: 6px;
+    margin-bottom: -3px;
+    margin-right: 2px;
+}
+
+.quest-large {
+    height: 24px;
+    width: 8px;
+    margin-bottom: -3px;
+    margin-right: 2px;
 }
 
 a {
@@ -35,6 +48,12 @@ em {
     font-style: normal;
     color: #ffd100;
 }
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .main {
     position: relative;
@@ -80,7 +99,7 @@ em {
     margin-bottom: 1em;
     padding: 1em;
     padding-right: 10%;
-    background-image: url("tick.png");
+    background-image: url("img/tick.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right 0px bottom 0px;
 }

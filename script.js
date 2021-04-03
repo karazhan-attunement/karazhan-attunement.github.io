@@ -2,13 +2,15 @@ function markAsDone() {
     const divId = this.parentNode.id;
 
     const stepCount = document.querySelectorAll('.done-button').length;
+    const nextItem = parseInt(divId) + 1;
 
-    console.log(divId + " " + stepCount);
-    if (parseInt(divId) + 1 < stepCount) {
-        localStorage.setItem("current-item", parseInt(divId) + 1);
-    } else {
+    if (nextItem >= stepCount) {
         window.location.href = "done.html";
     }
+
+    localStorage.setItem("current-item", nextItem);
+
+    document.getElementById(nextItem).scrollIntoView({ behavior: 'smooth', block: 'center' });
 
     styleAll();
 }
