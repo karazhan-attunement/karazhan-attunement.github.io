@@ -82,8 +82,7 @@ em {
     padding-right: 10%;
     background-image: url("tick.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: right;
-    background-size: auto;
+    background-position: right 0px bottom 0px;
 }
 
 .finished-step button {
